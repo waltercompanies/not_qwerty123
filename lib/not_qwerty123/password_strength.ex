@@ -26,7 +26,7 @@ defmodule NotQwerty123.PasswordStrength do
   also has links to further information about password-related issues.
   """
 
-  import NotQwerty123.Gettext
+  use Gettext, backend: NotQwerty123.Gettext
 
   alias NotQwerty123.WordlistManager
 

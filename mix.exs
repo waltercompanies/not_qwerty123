@@ -11,7 +11,7 @@ defmodule NotQwerty123.Mixfile do
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       name: "NotQwerty123",
-      compilers: [:gettext] ++ Mix.compilers(),
+      compilers: Mix.compilers(),
       package: package(),
       deps: deps(),
       docs: docs()

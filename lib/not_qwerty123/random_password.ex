@@ -13,8 +13,8 @@ defmodule NotQwerty123.RandomPassword do
   import NotQwerty123.PasswordStrength
 
   @alpha Enum.concat(?A..?Z, ?a..?z)
-  @digits '0123456789'
-  @punc '!#$%&\'()*+,-./:;<=>?@[\\]^_{|}~"'
+  @digits ~c"0123456789"
+  @punc ~c"!#$%&\'()*+,-./:;<=>?@[\\]^_{|}~\""
   @alphabet @alpha ++ @digits ++ @punc
   @char_map Enum.map_reduce(@alphabet, 0, fn x, acc ->
               {{acc, x}, acc + 1}
